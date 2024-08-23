@@ -2,7 +2,7 @@
 set -e
 
 if [[ $TARGET_VERSION -eq 21 ]]; then
-    git clone --branch jdk21.0.1 --depth 1 https://github.com/openjdk/jdk21u openjdk-21
+    git clone --depth 1 https://github.com/dragonwell-project/dragonwell21 openjdk-21
 else
-    git clone --depth 1 https://github.com/openjdk/jdk17u openjdk-17
+    git clone --depth 1 https://github.com/dragonwell-project/dragonwell17 openjdk-17
 fi
